@@ -1,9 +1,9 @@
-const { encrypt, decrypt } = require("./index");
+const { crypt } = require("./index");
 
 test("encrypt test", () => {
-  expect(encrypt("abc")).toEqual("abc");
+  expect(crypt("словарь")).toEqual("лсошамь");
 });
 
 test("decrypt test", () => {
-  expect(decrypt("abc")).toEqual("abc");
+  expect(crypt("пошый локмуцпит")).toEqual("новый сотрудник");
 });
